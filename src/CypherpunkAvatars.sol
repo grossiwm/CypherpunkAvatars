@@ -12,7 +12,7 @@ contract CypherpunkAvatars is ERC721URIStorage, Ownable {
         tokenCounter = 0;
     }
 
-    function createNFT(address to) public onlyOwner() {
+    function createNFT(address to) public onlyOwner {
         if (tokenCounter <= supply) {
             tokenCounter += 1;
             uint256 newTokenId = tokenCounter;
